@@ -6,8 +6,12 @@ let peapleSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  age: Number,
-  favoriteFoods: [String],
+  lastName: {
+    type: String,
+    required: true,
+  },
+  phonenumber:Number,
+  age: Number
 });
 
 module.exports = Person = mongoose.model("Person", peapleSchema);
